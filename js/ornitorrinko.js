@@ -1,7 +1,13 @@
 
 function defaultSettingCarousel(){
+
+
 	var menuList = $('ul.nav li');
 	var carousel = $('#myCarousel');
+	
+	carousel.carousel({
+		interval: false
+	  });
 	
 	menuList.click(function(){
 		carousel.carousel($(this).index());
